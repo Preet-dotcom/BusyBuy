@@ -1,0 +1,209 @@
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ============================== Home.js ================================= */
+
+/* Page header containing search bar and button */
+.header {
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Search bar */
+.header input {
+    width: 35%;
+    height: 35px;
+    border-radius: 5px;
+    border: 1px solid #6c757d;
+    padding: 5px 10px;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+}
+
+/* Apply filter button */
+.header button {
+    float: right;
+    margin-right: 5%;
+    height: 35px;
+    width: 110px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid #6c757d;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.header button:hover {
+    background-color: #0056b3;
+}
+
+/* Container containing filter bar and product list */
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* ============================ FilterBar.js ==================== */
+
+/* Filter bar styles */
+.filterBar {
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    height: 60px;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    background-color: #f8f9fa;
+    color: #4ca6dd;
+    border-radius: 5px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Filter bar heading */
+.filterBar h1 {
+    color: #343a40;
+    font-size: 1.3rem;
+}
+
+/* Subheading inside filter bar */
+.filterBar span {
+    color: #495057;
+}
+
+/* Price range to filter items */
+.priceRange {
+    text-align: center;
+}
+
+/* Price range slider */
+.priceRange input {
+    width: 100%;
+    height: 5px;
+}
+
+/* Category of the products */
+.categoryBox {
+    display: flex;
+}
+
+/* Radio buttons inside category */
+.categoryBox input {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+/* =========================== MainContent.js =================== */
+
+/* Container for all the products */
+.itemContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* =========================== ItemCard.js =========================== */
+
+/* Single item container */
+.cardContainer {
+    display: flex;
+    flex-direction: column;
+    height: 340px;
+    width: 250px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    background-color: white;
+    transition: transform 0.3s ease-in-out;
+}
+
+.cardContainer:hover {
+    transform: translateY(-5px);
+}
+
+/* Image container of product */
+.imageContainer {
+    height: 70%;
+    width: 100%;
+}
+
+/* Image within the container */
+.imageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Product description */
+.itemInfo {
+    width: 100%;
+    height: 30%;
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Container of name and price */
+.namePrice {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Name of the product */
+.name {
+    text-align: left;
+    width: 70%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #343a40;
+}
+
+/* Price of the product */
+.price {
+    width: 30%;
+    color: #007bff;
+    font-weight: 700;
+    text-align: right;
+}
+
+/* Button container within the item */
+.btnContainer {
+    margin-top: 10px;
+}
+
+/* Button inside the container */
+.btnContainer button {
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Add to cart button */
+.addBtn {
+    background-color: #28a745;
+}
+
+.addBtn:hover {
+    background-color: #218838;
+}
